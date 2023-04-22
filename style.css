@@ -1,0 +1,26 @@
+body {
+    background-color: #48689d;
+}
+
+div {
+    background-color: white;
+    width: 50vh;
+    height: 30vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    inset: 30vh 0vh 40vh 76vh;
+    position: absolute;
+}
+
+button {
+    background-color: #FF7C5F;
+    color: white;
+    position: relative;
+    width: 50vh;
+    inset: 60vh 0vh 0vh 75vh; /*hauteur - horizontale*/
+    height: 8vh;
+    border-style: none;
+    font-weight: 1000;
+    text-transform: uppercase;
+}
