@@ -1,6 +1,9 @@
 let button = document.querySelector('button');
 let div = document.querySelector('div');
+let bouton = document.querySelector("button");
+let i = 0;
 
+// Crétaions des variables qui contiennent chacune une citation
 let citation1 = "L’imagination gouverne le monde.";
 let auteur1   = "Napoléon";
 
@@ -26,7 +29,7 @@ let citation8 = "Qui veut la paix prépare la guerre.";
 let auteur8   = "Jules César";
 
 
-
+// Tableau qui contient les citations
 let tableauDeCitation = [
   [citation1, auteur1],
   [citation2, auteur2],
@@ -38,9 +41,52 @@ let tableauDeCitation = [
   [citation8, auteur8]
 ];
 
+// Affichage des citations à l'arrivé de l'utilisateur
+
+document.getElementById("paragrapheCitation").textContent = tableauDeCitation[0][0];
+
+document.getElementById("auteur").textContent = tableauDeCitation[0][1];
+
+
+// Fonction qui fait passer l'index du tableau à une autre ligne à chaque clique
+
+function nouvelleCitation(){
+    document.getElementById("paragrapheCitation").textContent = tableauDeCitation[i][0];
+    document.getElementById("auteur").textContent = tableauDeCitation[i][1];
+    i++;
+
+    if(i >= tableauDeCitation.length){
+      i = 0;
+    }
+}
 
 
 
+
+// Ajouter un style css au clique sur le bouton
+bouton.addEventListener("click", function() {
+  // Changez la couleur de fond du bouton
+  bouton.style.backgroundColor = "#096E31";
+  bouton.style.color = "#F2B100";
+
+  // Définissez le temps d'attente avant de changer la couleur de fond du bouton
+  setTimeout(function() {
+    bouton.style.backgroundColor = "";
+    bouton.style.color = "";
+  }, 100); // La couleur de fond disparaîtra après 500 millisecondes
+});
+
+bouton.addEventListener("mouseover", () => {
+  // Changez la couleur de fond du bouton
+  bouton.style.color = "black";
+
+});
+
+bouton.addEventListener("mouseout", () => {
+  // Changez la couleur de fond du bouton
+  bouton.style.color = "";
+
+});
 
 
     
