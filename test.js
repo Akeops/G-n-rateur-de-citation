@@ -66,7 +66,7 @@ function nouvelleCitation(){
 // Ajouter un style css au clique sur le bouton
 bouton.addEventListener("click", function() {
   // Changez la couleur de fond du bouton
-  bouton.style.backgroundColor = "#096E31";
+  bouton.style.backgroundColor = "#665D50";
   bouton.style.color = "#F2B100";
 
   // Définissez le temps d'attente avant de changer la couleur de fond du bouton

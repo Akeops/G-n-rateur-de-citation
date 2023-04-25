@@ -1,9 +1,9 @@
 body {
-    background-color: #48689d;
+    background-color: #2B2C2E;
 }
 
 div {
-    background-color: white;
+    background-color: #665D50;
     width: 50vh;
     height: 30vh;
     display: grid;
@@ -11,10 +11,11 @@ div {
     align-items: center;
     inset: 30vh 0vh 40vh 76vh;
     position: absolute;
+    text-align: center;
 }
 
 button {
-    background-color: #FF7C5F;
+    background-color: #3D4D98;
     color: white;
     position: relative;
     width: 50vh;
@@ -23,4 +24,8 @@ button {
     border-style: none;
     font-weight: 1000;
     text-transform: uppercase;
+}
+/*#111113*/
+#auteur {
+    border-top-color: thick double #32a1ce;
 }
