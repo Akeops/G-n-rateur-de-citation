@@ -1,25 +1,27 @@
 body {
-    background-color: #2B2C2E;
+    background-image: url("photos/blackWood.jpg");
+    background-size: cover;
 }
 
 div {
-    background-color: #665D50;
+    background-color: #454545;
+    color: #a0830b;
     width: 50vh;
     height: 30vh;
     display: grid;
     justify-content: center;
     align-items: center;
-    inset: 30vh 0vh 40vh 76vh;
+    inset: 30vh 0vh 40vh 81vh;
     position: absolute;
     text-align: center;
 }
 
 button {
-    background-color: #3D4D98;
+    background-color: #FF6000;
     color: white;
     position: relative;
     width: 50vh;
-    inset: 60vh 0vh 0vh 75vh; /*hauteur - horizontale*/
+    inset: 60vh 0vh 0vh 80vh; /*hauteur - horizontale*/
     height: 8vh;
     border-style: none;
     font-weight: 1000;

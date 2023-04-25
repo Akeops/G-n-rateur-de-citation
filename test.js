@@ -78,13 +78,15 @@ bouton.addEventListener("click", function() {
 
 bouton.addEventListener("mouseover", () => {
   // Changez la couleur de fond du bouton
-  bouton.style.color = "black";
+  bouton.style.color = "#a0830b";
+  bouton.style.backgroundColor = "#1F1F1F";
 
 });
 
 bouton.addEventListener("mouseout", () => {
   // Changez la couleur de fond du bouton
   bouton.style.color = "";
+  bouton.style.backgroundColor = "";
 
 });
 
