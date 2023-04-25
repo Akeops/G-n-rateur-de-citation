@@ -27,7 +27,7 @@ button {
     font-weight: 1000;
     text-transform: uppercase;
 }
-/*#111113*/
-#auteur {
-    border-top-color: thick double #32a1ce;
+
+#paragrapheCitation {
+    font-style: italic;
 }
