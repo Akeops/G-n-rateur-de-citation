@@ -1,4 +1,3 @@
-let button = document.querySelector('button');
 let div = document.querySelector('div');
 let bouton = document.querySelector("button");
 let i = 0;
@@ -66,29 +65,26 @@ function nouvelleCitation(){
 
 // Ajouter un style css au clique sur le bouton
 bouton.addEventListener("click", function() {
-  // Changez la couleur de fond du bouton
   bouton.style.backgroundColor = "#665D50";
   bouton.style.color = "#F2B100";
 
-  // Définissez le temps d'attente avant de changer la couleur de fond du bouton
+  // Définir le temps d'attente avant de changer la couleur de fond du bouton après le clique
   setTimeout(function() {
     bouton.style.backgroundColor = "";
     bouton.style.color = "";
-  }, 100); // La couleur de fond disparaîtra après 500 millisecondes
+  }, 100); // La couleur de fond disparaîtra après 100 millisecondes
 });
 
+// Change la couleur du bouton quand l'utilisateur passe la souris sur le bouton.
 bouton.addEventListener("mouseover", () => {
-  // Changez la couleur de fond du bouton
   bouton.style.color = "#a0830b";
   bouton.style.backgroundColor = "#1F1F1F";
-
 });
 
+  // Remet la couleur du bouton initial quand l'utilisateur enlève la souris du bouton.
 bouton.addEventListener("mouseout", () => {
-  // Changez la couleur de fond du bouton
   bouton.style.color = "";
   bouton.style.backgroundColor = "";
-
 });
 
 
